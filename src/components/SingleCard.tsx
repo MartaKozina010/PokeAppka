@@ -10,6 +10,7 @@ import { Types } from "./Types";
 
 const MainContainer = styled(Link)`
   text-decoration: none;
+  width: 100%;
 `;
 
 const CardContainer = styled.div<{ borderColor: string }>`
@@ -23,6 +24,7 @@ const CardContainer = styled.div<{ borderColor: string }>`
   padding: 5px 30px;
   border: 2px solid ${({ borderColor }) => borderColor};
   border-bottom: 0;
+
 
   &:hover {
     background-color: ${({ theme }) => theme.backgroundHover};
@@ -52,6 +54,7 @@ const Name = styled.p<{ textColor: string }>`
 `;
 
 const DataHandle = styled.div`
+  width: 100%;
   box-sizing: border-box;
   background-color: ${({ theme }) => theme.card};
   border-radius: 12px;
@@ -78,6 +81,7 @@ const DataLoading: React.FC = () => {
 type Props = {
   id: number;
 };
+
 
 export const SingleCard: React.FC<Props> = (props) => {
   const { data, error, isLoading } = useGetPokemonByIdQuery(props.id);

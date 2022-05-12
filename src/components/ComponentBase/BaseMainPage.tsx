@@ -4,6 +4,7 @@ import { SearchInput } from "../SearchInput";
 import { FilterTab } from "../FilterTab";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
 const HeaderContainer = styled.div`
   box-sizing: border-box;
@@ -57,11 +58,13 @@ const Pokeball = styled.img`
   height: 25px;
 `;
 
-const Filter = styled.img`
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
+const StyledFilterAltIcon = styled(FilterAltIcon)`
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+  }
 `;
 
 export const BaseMainPage: React.FC = ({ children }) => {
@@ -76,7 +79,7 @@ export const BaseMainPage: React.FC = ({ children }) => {
             <AppName>PokeApp</AppName>
           </StyledLink>
           <ModesContainer>
-            <Filter src="/PokeApp/filter.svg" onClick={() => setShowFilter(!showFilter)} />
+            <StyledFilterAltIcon onClick={() => setShowFilter(!showFilter)}/>
             <DarkModeToggler />
           </ModesContainer>
         </Header>

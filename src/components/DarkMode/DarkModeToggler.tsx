@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import { DarkThemeContext } from "./DarkModeProvider";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
 
-const Icon = styled.img`
-  width: 15px;
-  height: 15px;
+const StyledLightModeIcon = styled(LightModeIcon)`
   cursor: pointer;
 
   &:hover {
@@ -13,13 +13,25 @@ const Icon = styled.img`
   }
 `;
 
+const StyledDarkModeIcon = styled(DarkModeIcon)`
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+  }
+`;
+
+
+
 export const DarkModeToggler: React.FC = () => {
   const DarkModeContext = useContext(DarkThemeContext);
 
   return (
-    <Icon
-      src={DarkModeContext.isDarkMode ? "/PokeApp/sun.svg" : "/PokeApp/moon.svg"}
-      onClick={DarkModeContext.setDarkMode}
-    />
+      DarkModeContext.isDarkMode ? 
+        <StyledLightModeIcon onClick={DarkModeContext.setDarkMode}/> :
+        <StyledDarkModeIcon onClick={DarkModeContext.setDarkMode}/>
   );
 };
+
+
