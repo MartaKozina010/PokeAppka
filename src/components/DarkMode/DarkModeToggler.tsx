@@ -22,8 +22,6 @@ const StyledDarkModeIcon = styled(DarkModeIcon)`
   }
 `;
 
-
-
 export const DarkModeToggler: React.FC = () => {
   const DarkModeContext = useContext(DarkThemeContext);
 
