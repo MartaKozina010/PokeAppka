@@ -1,9 +1,8 @@
 {
-  "name": "poke-app",
-  "homepage": "https://martakozina010.github.io/PokeApp",
+  "name": "poke-appka",
+  "homepage": "https://martakozina010.github.io/PokeAppka",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://martakozina010.github.io",
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.9.0",

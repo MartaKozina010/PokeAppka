@@ -48,7 +48,7 @@ export const MainDataError: React.FC = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigate("/PokeApp")
+      navigate("/PokeAppka")
     }, 3000)
   }, [])
 
@@ -56,7 +56,7 @@ export const MainDataError: React.FC = () => {
     <BaseMainPage>
       <DataHandle>
         Sorry, an error has occured, turning back to the main page
-        <Image src="/PokeApp/errorGif.gif" />
+        <Image src="/PokeAppka/errorGif.gif" />
       </DataHandle>
     </BaseMainPage>
   );
@@ -66,7 +66,7 @@ export const MainDataLoading: React.FC = () => {
   return (
     <BaseMainPage>
       <DataHandle>
-        <Loading src="/PokeApp/loadingGif.svg" />
+        <Loading src="/PokeAppka/loadingGif.svg" />
       </DataHandle>
     </BaseMainPage>
   );

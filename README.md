@@ -1,5 +1,5 @@
 Interactive catalog of Pokemons based on Pokemon API.
-Project's github page: https://martakozina010.github.io/PokeApp
+Project's github page: https://martakozina010.github.io/PokeAppka
 
 **Used technology:**
 - Typescript

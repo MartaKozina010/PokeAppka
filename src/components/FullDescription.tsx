@@ -138,21 +138,21 @@ export const FullDescription: React.FC = () => {
   return (
     <MainContainer background={color}>
       <Header>
-        <ArrowLink to="/PokeApp">ᐊ</ArrowLink>
+        <ArrowLink to="/PokeAppka">ᐊ</ArrowLink>
         <Name>{data.name}</Name>
         <Id>#{id}</Id>
       </Header>
-      <Pokeball src="/PokeApp/pokeballl.svg" />
+      <Pokeball src="/PokeAppka/pokeballl.svg" />
       <Sprite src={data.sprite} />
       <InfoCard>
         <StyledH fontColor={color}>About</StyledH>
         <MeasurementsContainer>
           <Measurement>
-            <Icon src="/PokeApp/weight.svg" />
+            <Icon src="/PokeAppka/weight.svg" />
             <p>Weight: {data.weight} kg</p>
           </Measurement>
           <Measurement>
-            <Icon src="/PokeApp/height.svg" />
+            <Icon src="/PokeAppka/height.svg" />
             <p>Height: {data.height} m</p>
           </Measurement>
         </MeasurementsContainer>
@@ -162,12 +162,12 @@ export const FullDescription: React.FC = () => {
         </TypesContainer>
       </InfoCard>
       {id > 1 ? (
-        <LinkL to={`/PokeApp/pokemon/${id - 1}`}>
+        <LinkL to={`/PokeAppka/pokemon/${id - 1}`}>
           <Arrow>ᐊ</Arrow>
         </LinkL>
       ) : null}
       {data.name !== "calyrex" ? (
-        <LinkR to={`/PokeApp/pokemon/${id + 1}`}>
+        <LinkR to={`/PokeAppka/pokemon/${id + 1}`}>
           <Arrow>ᐅ</Arrow>
         </LinkR>
       ) : null}
