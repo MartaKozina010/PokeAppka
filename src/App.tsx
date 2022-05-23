@@ -19,8 +19,8 @@ function App() {
         <GlobalStyles />
         <AppCenter>
           <Routes>
-            <Route path="/PokeApp" element={<MainPage />} />
-            <Route path="/PokeApp/pokemon/:id" element={<FullDescription />} />
+            <Route path="/PokeAppka" element={<MainPage />} />
+            <Route path="/PokeAppka/pokemon/:id" element={<FullDescription />} />
             <Route path="*" element={<MainDataError />} />
           </Routes>
         </AppCenter>

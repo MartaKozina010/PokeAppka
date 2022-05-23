@@ -101,7 +101,7 @@ export const SingleCard: React.FC<Props> = (props) => {
     dispatch(typesToFilter(data.types))
 
   return (
-    <MainContainer to={`/PokeApp/pokemon/${props.id}`}>
+    <MainContainer to={`/PokeAppka/pokemon/${props.id}`}>
       <CardContainer borderColor={color}>
         <Types types={data.types} />
         <Name textColor={color}>{data.name}</Name>

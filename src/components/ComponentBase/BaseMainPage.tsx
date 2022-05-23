@@ -74,9 +74,9 @@ export const BaseMainPage: React.FC = ({ children }) => {
     <>
       <HeaderContainer>
         <Header>
-          <StyledLink to="/PokeApp">
-            <Pokeball src="/PokeApp/pokeball.svg" />
-            <AppName>PokeApp</AppName>
+          <StyledLink to="/PokeAppka">
+            <Pokeball src="/PokeAppka/pokeball.svg" />
+            <AppName>PokeAppka</AppName>
           </StyledLink>
           <ModesContainer>
             <StyledFilterAltIcon onClick={() => setShowFilter(!showFilter)}/>
